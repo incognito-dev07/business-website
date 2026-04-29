@@ -3,8 +3,8 @@ const router = express.Router();
 
 // Helper to render views
 const render = (res, view, title, currentPage) => {
-    const html = require(`../views/${view}`)(title, currentPage);
-    res.send(html);
+  const html = require(`../views/${view}`)(title, currentPage);
+  res.send(html);
 };
 
 // Routes
