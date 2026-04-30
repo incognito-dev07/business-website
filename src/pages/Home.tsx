@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import TypingAnimation from '../components/TypingAnimation'
 import ServiceCard from '../components/ServiceCard'
-import heroSvg from '../assets/hero.svg'
 
 const services = [
   { icon: "fa-shopping-cart", title: "E-Commerce", description: "Scalable online stores with secure payments and seamless checkout experiences." },
@@ -43,7 +42,7 @@ const Home: React.FC = () => {
     <>
       {/* Hero SVG Illustration */}
       <div className="hero-svg-wrapper">
-        <img src={heroSvg} alt="IncogDev Illustration" className="hero-svg" />
+        <img src="/assets/hero.svg" alt="IncogDev Illustration" className="hero-svg" />
       </div>
 
       {/* Typing Animation Section */}

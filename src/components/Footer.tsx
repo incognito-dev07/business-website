@@ -1,13 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import iconSvg from '../assets/icon.svg'
 
 const Footer: React.FC = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-brand">
-          <img src={iconSvg} alt="IncogDev" />
+          <img src="/assets/icon.svg" alt="IncogDev" />
           <p>Crafting exceptional digital experiences that drive results.</p>
           <div className="social-links">
             <a href="https://github.com/incognito-dev07"><i className="fab fa-github"></i></a>
