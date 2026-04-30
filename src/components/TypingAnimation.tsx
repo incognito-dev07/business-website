@@ -14,7 +14,7 @@ const TypingAnimation: React.FC = () => {
   const [sentenceIndex, setSentenceIndex] = useState(0)
   const [charIndex, setCharIndex] = useState(0)
   
-  const typingSpeed = 70
+  const typingSpeed = 60
   const deleteSpeed = 20
   const pauseBetween = 2000
 
