@@ -170,12 +170,12 @@
   </g>
 
   <text x="450" y="195" font-family="Georgia, 'Times New Roman', serif" font-size="110" font-weight="bold" fill="url(#silverGrad)" text-anchor="middle" letter-spacing="16">
-    INCOGDEV
+    IncogDev
     <animate attributeName="opacity" values="0.95;1;0.95" dur="3s" repeatCount="indefinite"/>
   </text>
 
   <text x="450" y="255" font-family="Arial, Helvetica, sans-serif" font-size="32" fill="#a0a0a0" text-anchor="middle" letter-spacing="24" font-weight="500">
-    FULL STACK
+    DIGITAL AGENCY
   </text>
 
   <line x1="220" y1="285" x2="680" y2="285" stroke="url(#silverGrad)" stroke-width="0.8" opacity="0.25">
