@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import iconSvg from '../assets/icon.svg'
 
 const Navigation: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -39,7 +40,7 @@ const Navigation: React.FC = () => {
       <nav className="mobile-nav" id="mobileNav">
         <div className="mobile-nav-header">
           <div className="logo">
-            <img src="/src/assets/icon.svg" alt="IncogDev" />
+            <img src={iconSvg} alt="IncogDev" />
             <span>IncogDev</span>
           </div>
           <button className="menu-toggle" id="menuToggle" onClick={toggleMenu} ref={menuToggleRef}>
@@ -66,7 +67,7 @@ const Navigation: React.FC = () => {
       <nav className="desktop-nav">
         <div className="nav-container">
           <div className="logo">
-            <img src="/src/assets/icon.svg" alt="IncogDev" />
+            <img src={iconSvg} alt="IncogDev" />
             <span>IncogDev</span>
           </div>
           <div className="nav-links">
