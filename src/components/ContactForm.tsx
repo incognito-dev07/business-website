@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 
 const ContactForm: React.FC = () => {
-  const [isSubmitting, setIsSubmitting] = useState(false)
   const [status, setStatus] = useState<{ type: string; message: string }>({
     type: 'info',
     message: 'After submitting, you\'ll be redirected to WhatsApp to confirm your booking with us.'
@@ -15,7 +14,6 @@ const ContactForm: React.FC = () => {
     const email = (form.querySelector('#email') as HTMLInputElement)?.value || ''
     const phone = (form.querySelector('#phone') as HTMLInputElement)?.value || ''
     const serviceSelect = form.querySelector('#service') as HTMLSelectElement
-    const service = serviceSelect?.value || ''
     const serviceText = serviceSelect?.options[serviceSelect.selectedIndex]?.text || 'Not specified'
     const message = (form.querySelector('#message') as HTMLTextAreaElement)?.value || ''
     

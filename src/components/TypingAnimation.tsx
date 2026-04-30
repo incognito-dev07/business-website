@@ -19,7 +19,7 @@ const TypingAnimation: React.FC = () => {
   const pauseBetween = 2000
 
   useEffect(() => {
-    let timeout: NodeJS.Timeout
+    let timeout: ReturnType<typeof setTimeout>
     
     const currentSentence = sentences[sentenceIndex]
     
