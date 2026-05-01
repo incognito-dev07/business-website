@@ -93,7 +93,7 @@ body {
 }
 
 .mobile-menu a {
-  padding: 0.75rem 1rem;
+  padding: 0.5rem 1rem;
   color: var(--text-secondary);
   text-decoration: none;
   display: flex;
