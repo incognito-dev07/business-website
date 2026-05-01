@@ -364,21 +364,21 @@ main {
   color: var(--text-secondary);
 }
 
-/* Work Grid */
-.work-grid {
+/* Project Grid */
+.project-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
 }
 
-.work-card {
+.project-card {
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
   overflow: hidden;
 }
 
-.work-image {
+.project-image {
   height: 210px;
   background: var(--bg-elevated);
   display: flex;
@@ -386,38 +386,58 @@ main {
   justify-content: center;
 }
 
-.work-image i {
+.project-image i {
   font-size: 4rem;
   color: var(--accent);
 }
 
-.work-info {
+.project-info {
   padding: 1.2rem;
 }
 
-.work-info h3 {
+.project-info h3 {
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
 }
 
-.work-info p {
+.project-info p {
   color: var(--text-secondary);
   font-size: 0.85rem;
   margin-bottom: 1rem;
 }
 
-.work-tags {
+.project-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
 }
 
-.work-tags span {
+.project-tags span {
   background: var(--bg-elevated);
   padding: 0.25rem 0.75rem;
   border-radius: 50px;
   font-size: 0.7rem;
   color: var(--accent);
+}
+
+.project-links {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: flex-end;
+  margin: 1rem 1rem 0 0;
+}
+
+.project-links a {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.8rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.project-links a:hover {
+  color: var(--text-primary);
 }
 
 /* Process Steps */
@@ -824,7 +844,7 @@ textarea {
     gap: 1.5rem;
   }
   
-  .work-grid {
+  .project-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
   }
@@ -879,7 +899,7 @@ textarea {
     gap: 1.5rem;
   }
   
-  .work-grid {
+  .project-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
   }

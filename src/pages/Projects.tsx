@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react'
-import WorkCard from '../components/WorkCard'
+import ProjectCard from '../components/ProjectCard'
 import ProcessStep from '../components/ProcessStep'
 
 const projects = [
-  { icon: "fa-store", title: "Luxury E-Commerce", description: "Complete online store with inventory management, payment gateway, and analytics dashboard.", tags: ["React", "Node.js", "Express", "PostgreSQL"] },
-  { icon: "fa-chart-line", title: "SaaS Platform", description: "Subscription-based analytics platform with real-time data visualization and reporting.", tags: ["Vue.js", "Express", "PostgreSQL"] },
-  { icon: "fa-blog", title: "Creative Portfolio", description: "Custom portfolio website for a renowned photographer with gallery and booking system.", tags: ["Next.js", "Tailwind", "Sanity"] },
-  { icon: "fa-tasks", title: "Project Management Tool", description: "Collaborative platform for teams to track tasks, deadlines, and project progress.", tags: ["Angular", "Firebase", "Tailwind"] }
+  { icon: "fa-store", title: "Luxury E-Commerce", description: "Complete online store with inventory management, payment gateway, and analytics dashboard.", tags: ["React", "Node.js", "Express", "PostgreSQL"], liveUrl: "#" },
+  { icon: "fa-chart-line", title: "SaaS Platform", description: "Subscription-based analytics platform with real-time data visualization and reporting.", tags: ["Vue.js", "Express", "PostgreSQL"], liveUrl: "#" },
+  { icon: "fa-blog", title: "Creative Portfolio", description: "Custom portfolio website for a renowned photographer with gallery and booking system.", tags: ["Next.js", "Tailwind", "Sanity"], liveUrl: "#" },
+  { icon: "fa-tasks", title: "Project Management Tool", description: "Collaborative platform for teams to track tasks, deadlines, and project progress.", tags: ["Angular", "Firebase", "Tailwind"], liveUrl: "#" }
 ]
 
 const processSteps = [
@@ -33,7 +33,7 @@ const Projects: React.FC = () => {
       })
     }, observerOptions)
 
-    document.querySelectorAll('.work-card, .process-step').forEach(el => {
+    document.querySelectorAll('.project-card, .process-step').forEach(el => {
       (el as HTMLElement).style.opacity = '0'
       ;(el as HTMLElement).style.transform = 'translateY(20px)'
       ;(el as HTMLElement).style.transition = 'all 0.6s ease'
@@ -50,10 +50,10 @@ const Projects: React.FC = () => {
         <p>Some of our projects we're proud to share</p>
       </section>
 
-      <section className="work-grid-section">
-        <div className="work-grid">
+      <section className="project-grid-section">
+        <div className="project-grid">
           {projects.map((project, index) => (
-            <WorkCard key={index} {...project} />
+            <ProjectCard key={index} {...project} />
           ))}
         </div>
       </section>
