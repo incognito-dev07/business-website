@@ -166,18 +166,6 @@ main {
   padding: 1rem 0;
 }
 
-.hero-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: var(--bg-elevated);
-  padding: 0.5rem 1rem;
-  border-radius: 50px;
-  font-size: 0.8rem;
-  color: var(--accent);
-  margin-bottom: 1rem;
-}
-
 .hero-title {
   font-size: 1.75rem;
   font-weight: 800;
@@ -247,7 +235,7 @@ main {
 /* Section Header */
 .section-header {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .section-badge {
@@ -259,12 +247,11 @@ main {
   border-radius: 50px;
   font-size: 0.75rem;
   color: var(--accent);
-  margin-bottom: 1rem;
+  margin-bottom: 0.3rem;
 }
 
 .section-header h2 {
   font-size: 1.5rem;
-  margin-bottom: 0.5rem;
 }
 
 .section-header p {
@@ -274,7 +261,7 @@ main {
 
 /* Services Grid */
 .services {
-  padding: 1rem 0 2rem;
+  padding: 1rem 0;
 }
 
 .services-grid {
@@ -287,7 +274,7 @@ main {
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
-  padding: 1.5rem;
+  padding: 1rem 1.5rem;
   transition: all 0.3s;
   position: relative;
 }
@@ -348,9 +335,9 @@ main {
 .cta {
   background: var(--bg-card);
   border-radius: var(--radius-lg);
-  padding: 2.5rem 1.5rem;
+  padding: 2rem 1.5rem;
   text-align: center;
-  margin: 2rem 0;
+  margin: 2rem 0 1.5rem;
 }
 
 .cta h2 {
@@ -366,12 +353,11 @@ main {
 /* Page Header */
 .page-header {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .page-header h1 {
   font-size: 2rem;
-  margin-bottom: 0.5rem;
 }
 
 .page-header p {
@@ -624,7 +610,7 @@ main {
 
 /* Contact Section */
 .contact-section {
-  padding: 1rem 0 2rem;
+  padding-bottom: 1rem;
 }
 
 .contact-grid {
@@ -744,7 +730,6 @@ textarea {
 .footer {
   background: var(--bg-secondary);
   border-top: 1px solid var(--border);
-  margin-top: 2rem;
 }
 
 .footer-container {
@@ -946,37 +931,6 @@ textarea {
 @media (min-width: 1024px) {
   .hero-svg {
     max-width: 700px;
-  }
-}
-
-/* Typing Animation */
-.typing-section {
-  text-align: center;
-  padding: 0.5rem 0 1rem;
-}
-
-.typing-text {
-  font-size: 1rem;
-  color: var(--accent);
-}
-
-.typing-cursor {
-  font-size: 1rem;
-  color: var(--accent);
-  animation: blink 0.8s infinite;
-}
-
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
-}
-
-@media (min-width: 768px) {
-  .typing-text {
-    font-size: 1.1rem;
-  }
-  .typing-cursor {
-    font-size: 1.1rem;
   }
 }
 

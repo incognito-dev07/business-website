@@ -32,7 +32,7 @@ const Contact: React.FC = () => {
     <>
       <section className="page-header">
         <h1>Get in <span className="gradient">touch</span></h1>
-        <p>Let's discuss your project and bring your ideas to life</p>
+        <p>Let's discuss your projects and bring them to life</p>
       </section>
 
       <section className="contact-section">

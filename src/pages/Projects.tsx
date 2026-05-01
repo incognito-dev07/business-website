@@ -46,8 +46,8 @@ const Projects: React.FC = () => {
   return (
     <>
       <section className="page-header">
-        <h1>Our <span className="gradient">work</span></h1>
-        <p>Some of our favorite projects</p>
+        <h1>Our <span className="gradient">projects</span></h1>
+        <p>Some of our projects we're proud to share</p>
       </section>
 
       <section className="work-grid-section">

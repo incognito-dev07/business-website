@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-brand">
-          <img src="/assets/icon.svg" alt="IncogDev" />
+          <img src="/assets/favicon.svg" alt="IncogDev" />
           <p>Crafting exceptional digital experiences that drive results.</p>
           <div className="social-links">
             <a href="https://github.com/incognito-dev07"><i className="fab fa-github"></i></a>
@@ -17,10 +17,10 @@ const Footer: React.FC = () => {
         </div>
         <div className="footer-links">
           <h4>Quick Links</h4>
-          <Link to="/">Homepage</Link>
-          <Link to="/projects">Our works</Link>
-          <Link to="/services">Services</Link>
-          <Link to="/contact">Contact us</Link>
+          <Link to="/">Home page</Link>
+          <Link to="/projects">Projects</Link>
+          <Link to="/services">Our Services</Link>
+          <Link to="/contact">Contact Us</Link>
         </div>
         <div className="footer-contact">
           <h4>Contact</h4>

@@ -39,7 +39,7 @@ const Navigation: React.FC = () => {
       <nav className="mobile-nav" id="mobileNav">
         <div className="mobile-nav-header">
           <div className="logo">
-            <img src="/assets/icon.svg" alt="IncogDev" />
+            <img src="/assets/favicon.svg" alt="IncogDev" />
             <span>IncogDev</span>
           </div>
           <button className="menu-toggle" id="menuToggle" onClick={toggleMenu} ref={menuToggleRef}>
@@ -66,7 +66,7 @@ const Navigation: React.FC = () => {
       <nav className="desktop-nav">
         <div className="nav-container">
           <div className="logo">
-            <img src="/assets/icon.svg" alt="IncogDev" />
+            <img src="/assets/favicon.svg" alt="IncogDev" />
             <span>IncogDev</span>
           </div>
           <div className="nav-links">

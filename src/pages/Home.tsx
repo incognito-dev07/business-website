@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import TypingAnimation from '../components/TypingAnimation'
 import ServiceCard from '../components/ServiceCard'
 
 const services = [
@@ -45,19 +44,13 @@ const Home: React.FC = () => {
         <img src="/assets/hero.svg" alt="IncogDev Illustration" className="hero-svg" />
       </div>
 
-      {/* Typing Animation Section */}
-      <TypingAnimation />
-
       {/* Hero Section */}
       <section className="hero">
-        <div className="hero-badge">
-          <i className="fas fa-code"></i> Full Stack Development
-        </div>
         <h1 className="hero-title">
-          Building <span className="gradient">digital excellence</span>
+          Building <span className="gradient">digital solutions </span> that make an impact
         </h1>
         <p className="hero-subtitle">
-          We craft high-performance websites and applications that elevate brands, 
+          We craft high-performance websites and web apps that elevate brands, 
           engage users, and drive tangible results.
         </p>
         <div className="hero-buttons">
