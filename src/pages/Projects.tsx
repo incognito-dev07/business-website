@@ -3,10 +3,10 @@ import ProjectCard from '../components/ProjectCard'
 import ProcessStep from '../components/ProcessStep'
 
 const projects = [
-  { icon: "fa-store", title: "Luxury E-Commerce", description: "Complete online store with inventory management, payment gateway, and analytics dashboard.", tags: ["React", "Node.js", "Express", "PostgreSQL"], liveUrl: "#" },
-  { icon: "fa-chart-line", title: "SaaS Platform", description: "Subscription-based analytics platform with real-time data visualization and reporting.", tags: ["Vue.js", "Express", "PostgreSQL"], liveUrl: "#" },
-  { icon: "fa-blog", title: "Creative Portfolio", description: "Custom portfolio website for a renowned photographer with gallery and booking system.", tags: ["Next.js", "Tailwind", "Sanity"], liveUrl: "#" },
-  { icon: "fa-tasks", title: "Project Management Tool", description: "Collaborative platform for teams to track tasks, deadlines, and project progress.", tags: ["Angular", "Firebase", "Tailwind"], liveUrl: "#" }
+  { icon: "fa-shopping-cart", title: "E-Commerce Platform", description: "Complete online store with inventory management, payment gateway, and analytics dashboard.", tags: ["React", "Node.js", "Express", "PostgreSQL"], github: "https://github.com/incognito-dev07/business-website", live: "#" },
+  { icon: "fa-chart-line", title: "SaaS Platform", description: "Subscription-based analytics platform with real-time data visualization and reporting.", tags: ["Vue.js", "Express", "PostgreSQL"], github: "https://github.com/incognito-dev07/business-website", live: "#" },
+  { icon: "fa-blog", title: "Creative Portfolio", description: "Custom portfolio website for a renowned photographer with gallery and booking system.", tags: ["Next.js", "Tailwind", "Sanity"], github: "https://github.com/incognito-dev07/business-website", live: "#" },
+  { icon: "fa-tasks", title: "Project Management Tool", description: "Collaborative platform for teams to track tasks, deadlines, and project progress.", tags: ["Angular", "Firebase", "Tailwind"], github: "https://github.com/incognito-dev07/business-website", live: "#" }
 ]
 
 const processSteps = [

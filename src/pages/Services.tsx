@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import ServiceDetailedCard from '../components/ServiceDetailedCard'
+import ServiceDetailedCard from '../components/ServiceDetailed'
 import FAQItem from '../components/FAQItem'
 
 const services = [
