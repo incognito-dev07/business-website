@@ -41,7 +41,7 @@ const Home: React.FC = () => {
     <>
       {/* Hero SVG Illustration */}
       <div className="hero-svg-wrapper">
-        <img src="/assets/hero.svg" alt="IncogDev Illustration" className="hero-svg" />
+        <img src="/assets/banner.svg" alt="IncogDev Illustration" className="hero-svg" />
       </div>
 
       {/* Hero Section */}
