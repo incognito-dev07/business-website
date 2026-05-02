@@ -767,7 +767,7 @@ textarea {
   gap: 1.5rem;
 }
 
-.footer-brand img {
+.footer-container img {
   width: 32px;
   margin-bottom: 0.5rem;
 }
@@ -863,8 +863,19 @@ textarea {
   }
   
   .footer-container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 0.3fr 1fr 1fr 0.7fr;
     gap: 2rem;
+  }
+  
+  .footer-container img {
+    width: 50px;
+    justify-self: center;
+    align-self: center;
+  }
+  
+  .footer-links a {
+    display: inline-block;
+    margin-right: 1rem;
   }
   
   .contact-grid {

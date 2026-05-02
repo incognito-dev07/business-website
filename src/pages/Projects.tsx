@@ -4,11 +4,11 @@ import ProcessStep from '../components/ProcessStep'
 
 const projects = [
   { icon: "fa-shopping-cart", title: "E-Commerce Platform", description: "Full-featured online store with product management, cart, and payment integration.", tags: ["React", "Node.js", "Express", "PostgreSQL"], github: "https://github.com/incognito-dev07/business-website", live: "#" },
-  { icon: "fa-user-tie", title: "Portfolio Website", description: "Modern portfolio website with animations and responsive design.", tags: ["React", "TypeScript", "CSS"], github: "https://github.com/incognito-dev07/business-website", live: "#" },
-  { icon: "fa-tasks", title: "Task Management App", description: "Collaborative task management tool with real-time updates.", tags: ["Vue.js", "Firebase", "Tailwind"], github: "https://github.com/incognito-dev07/business-website", live: "#" },
-  { icon: "fa-cloud-sun", title: "Weather Dashboard", description: "Real-time weather app with location detection and forecasts.", tags: ["Javascript", "API", "CSS"], github: "https://github.com/incognito-dev07/business-website", live: "#" },
-  { icon: "fa-blog", title: "Blog Platform", description: "Full-stack blog with CMS, comments, and user authentication.", tags: ["Next.js", "Prisma", "PostgreSQL"], github: "https://github.com/incognito-dev07/business-website", live: "#" },
-  { icon: "fa-chart-line", title: "Analytics Dashboard", description: "Data visualization dashboard with charts and reports", tags: ["React", "Chart.js", "Express"], github: "https://github.com/incognito-dev07/business-website", live: "#" }
+  { icon: "fa-user-tie", title: "Portfolio Website", description: "Modern portfolio website with animations and responsive design.", tags: ["React", "TypeScript", "CSS"], github: "https://github.com/incognito-dev07/portfolio-website", live: "#" },
+  { icon: "fa-tasks", title: "Task Management App", description: "Collaborative task management tool with real-time updates.", tags: ["Vue.js", "Firebase", "Tailwind"], github: "https://github.com/incognito-dev07", live: "#" },
+  { icon: "fa-cloud-sun", title: "Weather Dashboard", description: "Real-time weather app with location detection and forecasts.", tags: ["Javascript", "API", "CSS"], github: "https://github.com/incognito-dev07", live: "#" },
+  { icon: "fa-blog", title: "Blog Platform", description: "Full-stack blog with CMS, comments, and user authentication.", tags: ["Next.js", "Prisma", "PostgreSQL"], github: "https://github.com/incognito-dev07", live: "#" },
+  { icon: "fa-chart-line", title: "Analytics Dashboard", description: "Data visualization dashboard with charts and reports", tags: ["React", "Chart.js", "Express"], github: "https://github.com/incognito-dev07", live: "#" }
 ]
 
 const processSteps = [
