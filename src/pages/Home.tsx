@@ -11,7 +11,6 @@ const services = [
 
 const Home: React.FC = () => {
   useEffect(() => {
-    // Intersection Observer for animations
     const observerOptions = {
       threshold: 0.1,
       rootMargin: '0px 0px -50px 0px'
