@@ -370,7 +370,7 @@ main {
   gap: 1rem;
 }
 
-/* Updated Project Card Styles */
+/* Updated Project Card Styles - Icon beside heading, left aligned */
 .project-card {
   background: var(--bg-card);
   border: 1px solid var(--border);
@@ -390,20 +390,22 @@ main {
 
 .project-header {
   padding: 1.5rem 1.5rem 0.5rem 1.5rem;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .project-icon-header {
-  width: 60px;
-  height: 60px;
+  width: 48px;
+  height: 48px;
   background: var(--bg-elevated);
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-md);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 1rem auto;
   border: 1px solid var(--border-light);
   transition: all 0.3s ease;
+  flex-shrink: 0;
 }
 
 .project-card:hover .project-icon-header {
@@ -412,7 +414,7 @@ main {
 }
 
 .project-icon-header i {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: var(--accent);
 }
 
@@ -433,7 +435,7 @@ main {
   color: var(--text-secondary);
   font-size: 0.85rem;
   margin-bottom: 1.2rem;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .project-tags {
@@ -790,7 +792,7 @@ textarea {
   color: #d4af37;
 }
 
-/* Custom Dropdown Styles */
+/* Custom Dropdown Styles with Scrollbar */
 .custom-dropdown {
   position: relative;
   width: 100%;
@@ -834,6 +836,25 @@ textarea {
   max-height: 200px;
   overflow-y: auto;
   box-shadow: var(--shadow);
+}
+
+/* Custom scrollbar for dropdown */
+.dropdown-options::-webkit-scrollbar {
+  width: 6px;
+}
+
+.dropdown-options::-webkit-scrollbar-track {
+  background: var(--bg-elevated);
+  border-radius: 3px;
+}
+
+.dropdown-options::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 3px;
+}
+
+.dropdown-options::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
 }
 
 .dropdown-option {
