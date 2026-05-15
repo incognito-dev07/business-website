@@ -801,13 +801,13 @@ textarea {
 
 .dropdown-selected {
   width: 100%;
-  padding: 0.7rem;
+  padding: 0.5rem 0.75rem;
   background: var(--bg-elevated);
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   color: var(--text-primary);
   font-family: 'Inter', sans-serif;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -826,8 +826,7 @@ textarea {
 .dropdown-options {
   position: absolute;
   top: 100%;
-  left: 0;
-  right: 0;
+  left: 0; right: 0;
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
@@ -840,7 +839,7 @@ textarea {
 
 /* Custom scrollbar for dropdown */
 .dropdown-options::-webkit-scrollbar {
-  width: 6px;
+  width: 3px;
 }
 
 .dropdown-options::-webkit-scrollbar-track {

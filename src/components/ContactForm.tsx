@@ -14,10 +14,10 @@ const ContactForm: React.FC = () => {
   const dropdownRef = useRef<HTMLDivElement>(null)
 
   const serviceOptions = [
-    { value: 'ecommerce', label: 'E-Commerce' },
+    { value: 'portfolio', label: 'Portfolio Website' },
+    { value: 'ecommerce', label: 'E-Commerce Website' },
     { value: 'landing', label: 'Landing Page' },
-    { value: 'portfolio', label: 'Portfolio' },
-    { value: 'webapp', label: 'Web Application' },
+    { value: 'webapp', label: 'Custom Application' },
     { value: 'other', label: 'Other' }
   ]
 
