@@ -1,10 +1,41 @@
-import React, { useState } from 'react'
+// ContactForm.tsx
+import React, { useState, useRef, useEffect } from 'react'
 
 const ContactForm: React.FC = () => {
   const [status, setStatus] = useState<{ type: string; message: string }>({
     type: 'info',
     message: 'After submitting, you\'ll be redirected to WhatsApp to confirm your booking with us.'
   })
+
+  // Custom dropdown state
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false)
+  const [selectedService, setSelectedService] = useState('')
+  const [selectedServiceText, setSelectedServiceText] = useState('Select a service')
+  const dropdownRef = useRef<HTMLDivElement>(null)
+
+  const serviceOptions = [
+    { value: 'portfolio', label: 'Portfolio Website' },
+    { value: 'ecommerce', label: 'E-Commerce Website' },
+    { value: 'landing', label: 'Landing Page' },
+    { value: 'webapp', label: 'Custom Application' },
+    { value: 'other', label: 'Other' }
+  ]
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setIsDropdownOpen(false)
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => document.removeEventListener('mousedown', handleClickOutside)
+  }, [])
+
+  const handleSelectService = (value: string, label: string) => {
+    setSelectedService(value)
+    setSelectedServiceText(label)
+    setIsDropdownOpen(false)
+  }
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -13,8 +44,7 @@ const ContactForm: React.FC = () => {
     const name = (form.querySelector('#name') as HTMLInputElement)?.value || ''
     const email = (form.querySelector('#email') as HTMLInputElement)?.value || ''
     const phone = (form.querySelector('#phone') as HTMLInputElement)?.value || ''
-    const serviceSelect = form.querySelector('#service') as HTMLSelectElement
-    const serviceText = serviceSelect?.options[serviceSelect.selectedIndex]?.text || 'Not specified'
+    const serviceText = selectedServiceText === 'Select a service' ? 'Not specified' : selectedServiceText
     const message = (form.querySelector('#message') as HTMLTextAreaElement)?.value || ''
     
     let whatsappMessage = `*NEW PROJECT INQUIRY*%0A%0A
@@ -23,7 +53,7 @@ const ContactForm: React.FC = () => {
 *Phone Number*: ${phone || 'Not provided'}%0A%0A
 
 *Service Needed:* ${serviceText}%0A
-*Message:* ${message || 'Not provided'}%0A%0A`
+*Message:* ${message || 'Not provided'}`
 
     const whatsappNumber = '2349065168872'
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`
@@ -36,6 +66,8 @@ const ContactForm: React.FC = () => {
     setTimeout(() => {
       window.open(whatsappUrl, '_blank')
       form.reset()
+      setSelectedService('')
+      setSelectedServiceText('Select a service')
       
       submitBtn.innerHTML = originalText
       submitBtn.disabled = false
@@ -46,26 +78,41 @@ const ContactForm: React.FC = () => {
     <form className="contact-form" id="contactForm" onSubmit={handleSubmit}>
       <div className="form-group">
         <label><i className="fas fa-user"></i> Full name</label>
-        <input type="text" id="name" required placeholder="customer name" />
+        <input type="text" id="name" required placeholder="Enter your full name" />
       </div>
       <div className="form-group">
         <label><i className="fas fa-envelope"></i> Email address</label>
-        <input type="email" id="email" required placeholder="me@example.com" />
+        <input type="email" id="email" required placeholder="Enter your valid email" />
       </div>
       <div className="form-group">
         <label><i className="fas fa-phone"></i> Phone number</label>
-        <input type="tel" id="phone" placeholder="+234 xxx xxx xxxx" />
+        <input type="tel" id="phone" placeholder="Enter phone number" />
       </div>
       <div className="form-group">
         <label><i className="fas fa-cogs"></i> Service needed</label>
-        <select id="service">
-          <option value="">Select a service</option>
-          <option value="ecommerce">E-Commerce</option>
-          <option value="landing">Landing Page</option>
-          <option value="portfolio">Portfolio</option>
-          <option value="webapp">Web Application</option>
-          <option value="other">Other</option>
-        </select>
+        <div className="custom-dropdown" ref={dropdownRef}>
+          <div 
+            className="dropdown-selected" 
+            onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+          >
+            <span>{selectedServiceText}</span>
+            <i className={`fas fa-chevron-down ${isDropdownOpen ? 'open' : ''}`}></i>
+          </div>
+          {isDropdownOpen && (
+            <div className="dropdown-options">
+              {serviceOptions.map(option => (
+                <div 
+                  key={option.value}
+                  className={`dropdown-option ${selectedService === option.value ? 'selected' : ''}`}
+                  onClick={() => handleSelectService(option.value, option.label)}
+                >
+                  {option.label}
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+        <input type="hidden" id="service" value={selectedService} />
       </div>
       <div className="form-group">
         <label><i className="fas fa-comment"></i> Project details</label>
