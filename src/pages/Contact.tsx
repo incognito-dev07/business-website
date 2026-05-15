@@ -48,7 +48,7 @@ const Contact: React.FC = () => {
                 <i className="fab fa-github"></i>
               </a>
               <h3>View our GitHub profile</h3>
-              <p>github.com/incognito-dev07</p>
+              <p>incognito-dev07</p>
             </div>
           </div>
 

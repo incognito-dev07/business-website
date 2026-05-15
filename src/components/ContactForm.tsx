@@ -23,7 +23,7 @@ const ContactForm: React.FC = () => {
 *Phone Number*: ${phone || 'Not provided'}%0A%0A
 
 *Service Needed:* ${serviceText}%0A
-*Message:* ${message || 'Not provided'}%0A%0A`
+*Message:* ${message || 'Not provided'}`
 
     const whatsappNumber = '2349065168872'
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`
@@ -46,7 +46,7 @@ const ContactForm: React.FC = () => {
     <form className="contact-form" id="contactForm" onSubmit={handleSubmit}>
       <div className="form-group">
         <label><i className="fas fa-user"></i> Full name</label>
-        <input type="text" id="name" required placeholder="customer name" />
+        <input type="text" id="name" required placeholder="your full name" />
       </div>
       <div className="form-group">
         <label><i className="fas fa-envelope"></i> Email address</label>
