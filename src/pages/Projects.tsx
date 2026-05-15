@@ -1,15 +1,15 @@
-// Projects.tsx (with longer descriptions)
+// Projects.tsx
 import React, { useEffect } from 'react'
 import ProjectCard from '../components/ProjectCard'
 import ProcessStep from '../components/ProcessStep'
 
 const projects = [
-  { icon: "fa-shopping-cart", title: "E-Commerce Platform", description: "A fully-featured online store with product management, shopping cart, secure payment integration, user authentication, order tracking, and an admin dashboard for inventory management.", tags: ["React", "Node.js", "Express", "PostgreSQL"], github: "https://github.com/incognito-dev07/business-website", live: "#" },
-  { icon: "fa-user-tie", title: "Portfolio Website", description: "A modern, animated portfolio website that showcases creative work with smooth transitions, project galleries, client testimonials, blog integration, and fully responsive design for all devices.", tags: ["React", "TypeScript", "CSS"], github: "https://github.com/incognito-dev07/portfolio-website", live: "#" },
-  { icon: "fa-tasks", title: "Task Management App", description: "A collaborative task management tool with real-time updates, team workspaces, task assignments, due dates, file attachments, comments, and progress tracking dashboards.", tags: ["Vue.js", "Firebase", "Tailwind"], github: "https://github.com/incognito-dev07", live: "#" },
-  { icon: "fa-cloud-sun", title: "Weather Dashboard", description: "A real-time weather application with location detection, 7-day forecasts, interactive maps, severe weather alerts, temperature graphs, and customizable weather widgets.", tags: ["Javascript", "API", "CSS"], github: "https://github.com/incognito-dev07", live: "#" },
-  { icon: "fa-blog", title: "Blog Platform", description: "A full-stack blogging platform with a custom CMS, user authentication, comment sections, rich text editing, categories and tags, search functionality, and SEO optimization.", tags: ["Next.js", "Prisma", "PostgreSQL"], github: "https://github.com/incognito-dev07", live: "#" },
-  { icon: "fa-chart-line", title: "Analytics Dashboard", description: "A comprehensive data visualization dashboard with interactive charts, real-time metrics, custom reports, user behavior tracking, exportable data, and multi-platform integration.", tags: ["React", "Chart.js", "Express"], github: "https://github.com/incognito-dev07", live: "#" }
+  { icon: "fa-shopping-cart", title: "E-Commerce Platform", description: "Full-featured online store with cart, payments, and admin dashboard.", tags: ["React", "Node.js", "Express", "PostgreSQL"], github: "https://github.com/incognito-dev07/business-website", live: "#" },
+  { icon: "fa-user-tie", title: "Portfolio Website", description: "Modern animated portfolio with project galleries and blog integration.", tags: ["React", "TypeScript", "CSS"], github: "https://github.com/incognito-dev07/portfolio-website", live: "#" },
+  { icon: "fa-tasks", title: "Task Management App", description: "Collaborative tool with real-time updates and team workspaces.", tags: ["Vue.js", "Firebase", "Tailwind"], github: "https://github.com/incognito-dev07", live: "#" },
+  { icon: "fa-cloud-sun", title: "Weather Dashboard", description: "Real-time weather app with forecasts and interactive maps.", tags: ["Javascript", "API", "CSS"], github: "https://github.com/incognito-dev07", live: "#" },
+  { icon: "fa-blog", title: "Blog Platform", description: "Full-stack blogging platform with CMS and user authentication.", tags: ["Next.js", "Prisma", "PostgreSQL"], github: "https://github.com/incognito-dev07", live: "#" },
+  { icon: "fa-chart-line", title: "Analytics Dashboard", description: "Data visualization dashboard with charts and real-time metrics.", tags: ["React", "Chart.js", "Express"], github: "https://github.com/incognito-dev07", live: "#" }
 ]
 
 const processSteps = [
