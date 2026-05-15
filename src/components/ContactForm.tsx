@@ -46,15 +46,15 @@ const ContactForm: React.FC = () => {
     <form className="contact-form" id="contactForm" onSubmit={handleSubmit}>
       <div className="form-group">
         <label><i className="fas fa-user"></i> Full name</label>
-        <input type="text" id="name" required placeholder="your full name" />
+        <input type="text" id="name" required placeholder="Enter your full name" />
       </div>
       <div className="form-group">
         <label><i className="fas fa-envelope"></i> Email address</label>
-        <input type="email" id="email" required placeholder="me@example.com" />
+        <input type="email" id="email" required placeholder="Enter your valid email" />
       </div>
       <div className="form-group">
         <label><i className="fas fa-phone"></i> Phone number</label>
-        <input type="tel" id="phone" placeholder="+234 xxx xxx xxxx" />
+        <input type="tel" id="phone" placeholder="Enter phone number" />
       </div>
       <div className="form-group">
         <label><i className="fas fa-cogs"></i> Service needed</label>
