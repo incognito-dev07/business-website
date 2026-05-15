@@ -370,7 +370,6 @@ main {
   gap: 1rem;
 }
 
-/* Updated Project Card Styles - Icon beside heading, left aligned */
 .project-card {
   background: var(--bg-card);
   border: 1px solid var(--border);
@@ -425,7 +424,7 @@ main {
 }
 
 .project-info {
-  padding: 0 1.5rem 1.5rem 1.5rem;
+  padding: 0 1.5rem 1rem;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -448,7 +447,7 @@ main {
 .project-tags span {
   background: var(--bg-elevated);
   padding: 0.25rem 0.75rem;
-  border-radius: 50px;
+  border-radius: 16px;
   font-size: 0.7rem;
   color: var(--accent);
   border: 1px solid var(--border-light);
@@ -459,7 +458,7 @@ main {
   gap: 1.5rem;
   justify-content: flex-end;
   margin-top: auto;
-  padding-top: 0.5rem;
+  padding-top: 0.75rem;
   border-top: 1px solid var(--border-light);
 }
 
