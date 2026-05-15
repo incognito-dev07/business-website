@@ -1,3 +1,4 @@
+// ProjectCard.tsx
 import React from 'react'
 
 interface ProjectCardProps {
@@ -12,11 +13,13 @@ interface ProjectCardProps {
 const ProjectCard: React.FC<ProjectCardProps> = ({ icon, title, description, tags, github, live }) => {
   return (
     <div className="project-card">
-      <div className="project-image">
-        <i className={`fas ${icon}`}></i>
+      <div className="project-header">
+        <div className="project-icon-header">
+          <i className={`fas ${icon}`}></i>
+        </div>
+        <h3>{title}</h3>
       </div>
       <div className="project-info">
-        <h3>{title}</h3>
         <p>{description}</p>
         <div className="project-tags">
           {tags.map((tag, index) => (
