@@ -308,7 +308,7 @@ main {
 .service-card p {
   color: var(--text-secondary);
   font-size: 0.85rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   line-height: 1.5;
 }
 
