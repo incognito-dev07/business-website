@@ -791,7 +791,7 @@ textarea {
   color: #d4af37;
 }
 
-/* Custom Dropdown Styles with Scrollbar */
+/* Custom Dropdown */
 .custom-dropdown {
   position: relative;
   width: 100%;
@@ -836,7 +836,6 @@ textarea {
   box-shadow: var(--shadow);
 }
 
-/* Custom scrollbar for dropdown */
 .dropdown-options::-webkit-scrollbar {
   width: 3px;
 }

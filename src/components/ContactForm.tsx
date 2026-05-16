@@ -1,4 +1,3 @@
-// ContactForm.tsx
 import React, { useState, useRef, useEffect } from 'react'
 
 const ContactForm: React.FC = () => {
@@ -7,7 +6,6 @@ const ContactForm: React.FC = () => {
     message: 'After submitting, you\'ll be redirected to WhatsApp to confirm your booking with us.'
   })
 
-  // Custom dropdown state
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
   const [selectedService, setSelectedService] = useState('')
   const [selectedServiceText, setSelectedServiceText] = useState('Select a service')
