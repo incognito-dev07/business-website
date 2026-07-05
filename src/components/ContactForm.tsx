@@ -8,7 +8,7 @@ const ContactForm: React.FC = () => {
 
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
   const [selectedService, setSelectedService] = useState('')
-  const [selectedServiceText, setSelectedServiceText] = useState('Select a service')
+  const [selectedServiceText, setSelectedServiceText] = useState('')
   const dropdownRef = useRef<HTMLDivElement>(null)
 
   const serviceOptions = [
@@ -75,19 +75,19 @@ const ContactForm: React.FC = () => {
   return (
     <form className="contact-form" id="contactForm" onSubmit={handleSubmit}>
       <div className="form-group">
-        <label><i className="fas fa-user"></i> Full name</label>
-        <input type="text" id="name" required placeholder="Enter your full name" />
+        <label><i className="fas fa-user"></i> PROSPECT NAME</label>
+        <input type="text" id="name" required/>
       </div>
       <div className="form-group">
-        <label><i className="fas fa-envelope"></i> Email address</label>
-        <input type="email" id="email" required placeholder="Enter your valid email" />
+        <label><i className="fas fa-envelope"></i> EMAIL ADDRESS</label>
+        <input type="email" id="email" required/>
       </div>
       <div className="form-group">
-        <label><i className="fas fa-phone"></i> Phone number</label>
-        <input type="tel" id="phone" placeholder="Enter phone number" />
+        <label><i className="fas fa-phone"></i> PHONE NUMBER</label>
+        <input type="tel" id="phone"/>
       </div>
       <div className="form-group">
-        <label><i className="fas fa-cogs"></i> Service needed</label>
+        <label><i className="fas fa-cogs"></i> SERVICE NEEDED</label>
         <div className="custom-dropdown" ref={dropdownRef}>
           <div 
             className="dropdown-selected" 
@@ -113,7 +113,7 @@ const ContactForm: React.FC = () => {
         <input type="hidden" id="service" value={selectedService} />
       </div>
       <div className="form-group">
-        <label><i className="fas fa-comment"></i> Project details</label>
+        <label><i className="fas fa-comment"></i> PROJECT DETAILS</label>
         <textarea id="message" rows={5} required placeholder="Tell us about your project..."></textarea>
       </div>
       <button type="submit" className="btn btn-primary btn-submit">

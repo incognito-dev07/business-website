@@ -293,8 +293,8 @@ main {
 }
 
 .service-icon {
-  width: 48px;
-  height: 48px;
+  width: 42px;
+  height: 42px;
   background: var(--bg-elevated);
   border-radius: var(--radius-md);
   display: flex;
@@ -306,7 +306,7 @@ main {
 }
 
 .service-icon i {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: var(--accent);
 }
 
@@ -393,7 +393,7 @@ main {
 
 .project-card:hover {
   transform: translateY(-4px);
-  border-color: var(--accent);
+  border-color: var(--text-muted);
   box-shadow: var(--shadow-hover);
 }
 
@@ -405,8 +405,7 @@ main {
 }
 
 .project-icon {
-  width: 48px;
-  height: 48px;
+  width: 48px; height: 48px;
   background: var(--bg-elevated);
   border-radius: var(--radius-md);
   display: flex;
@@ -418,7 +417,7 @@ main {
 }
 
 .project-card:hover .project-icon {
-  border-color: var(--accent);
+  border-color: var(--text-muted);
   background: rgba(192, 192, 192, 0.05);
 }
 
@@ -464,21 +463,37 @@ main {
 
 .project-links {
   display: flex;
-  gap: 1.5rem;
-  justify-content: flex-end;
+  justify-content: space-between;
   margin-top: auto;
   padding-top: 0.75rem;
   border-top: 1px solid var(--border-light);
+  align-items: center;
 }
 
-.project-links a {
+.project-modal-btn {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--accent);
+  padding: 0.25rem 0.7rem;
+}
+
+.project-link {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.project-link a {
   color: var(--accent);
   text-decoration: none;
-  font-size: 0.8rem;
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
+  font-size: 1rem;
   transition: all 0.2s ease;
+  padding: 0.2rem 0.7rem;
+}
+
+.project-links a, .project-modal-btn {
+  background: var(--bg-elevated);
+  border-radius: 7.5px;
+  border: 1px solid var(--border);
 }
 
 .project-links a:hover {
@@ -737,9 +752,9 @@ main {
 .form-group label {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 7px;
   margin: 0 0 0.5rem 0.3rem;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   color: var(--text-secondary);
 }
 
@@ -747,13 +762,13 @@ main {
 .form-group select,
 .form-group textarea {
   width: 100%;
-  padding: 0.7rem;
+  padding: 0.6rem;
   background: var(--bg-elevated);
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   color: var(--text-primary);
-  font-family: 'Inter', sans-serif;
-  font-size: 0.85rem;
+  font-family: 'PT sans';
+  font-size: 0.9rem;
 }
 
 .form-group input:focus,
@@ -761,6 +776,10 @@ main {
 .form-group textarea:focus {
   outline: none;
   border-color: var(--accent);
+}
+
+.form-group textarea::placeholder {
+  color: var(--text-muted);
 }
 
 textarea {
@@ -809,13 +828,12 @@ textarea {
 
 .dropdown-selected {
   width: 100%;
-  padding: 0.5rem 0.75rem;
+  padding: 0.6rem;
   background: var(--bg-elevated);
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   color: var(--text-primary);
-  font-family: 'Inter', sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -825,6 +843,7 @@ textarea {
 .dropdown-selected i {
   transition: transform 0.3s ease;
   color: var(--text-secondary);
+  padding: 0.15rem;
 }
 
 .dropdown-selected i.open {
@@ -859,9 +878,7 @@ textarea {
   border-radius: 3px;
 }
 
-.dropdown-options::-webkit-scrollbar-thumb:hover {
-  background: var(--text-secondary);
-}
+.dropdown-options::-webkit-scrollbar-thumb:hover { background: var(--text-secondary); }
 
 .dropdown-option {
   padding: 0.7rem;
@@ -945,9 +962,10 @@ textarea {
 
 .footer-bottom {
   text-align: center;
-  padding: 1rem;
+  padding: 0.75rem;
   border-top: 1px solid var(--border);
-  font-size: 0.7rem;
+  font-size: 0.8rem;
+  font-weight: 600;
   color: var(--text-muted);
 }
 

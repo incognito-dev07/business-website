@@ -26,12 +26,17 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ icon, title, description, tag
           ))}
         </div>
         <div className="project-links">
-            <a href={github} target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-github"></i> Code
-            </a>
-            <a href={live} target="_blank" rel="noopener noreferrer">
-              <i className="fas fa-external-link-alt"></i> Live Demo
-            </a>
+            <div className="project-modal-btn">
+              View Details 
+            </div>
+            <div className="project-link">
+              <a href={github} target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-github"></i>
+              </a>
+              <a href={live} target="_blank" rel="noopener noreferrer">
+                <i className="fas fa-external-link-alt"></i>
+              </a>
+            </div>
         </div>
       </div>
     </div>

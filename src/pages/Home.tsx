@@ -6,7 +6,7 @@ const services = [
   { icon: "fa-shopping-cart", title: "E-Commerce", description: "Scalable online stores with secure payments and seamless checkout experiences." },
   { icon: "fa-mobile-alt", title: "Landing Pages", description: "High-converting landing pages designed to capture leads and drive sales." },
   { icon: "fa-user-tie", title: "Portfolios", description: "Stunning portfolio websites that showcase your work and attract opportunities." },
-  { icon: "fa-layer-group", title: "Web Apps", description: "Complex web applications with robust backends and modern frontends." }
+  { icon: "fa-layer-group", title: "Web Applications", description: "Complex web applications with robust backends and modern frontends." }
 ]
 
 const Home: React.FC = () => {
