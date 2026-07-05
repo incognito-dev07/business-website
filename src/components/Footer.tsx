@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
         <div className="footer-contact">
           <h4>Contact</h4>
           <p><i className="fas fa-phone"></i> +234 906 516 8872</p>
-          <p><i className="fas fa-map-marker-alt"></i> Akure, Ondo State</p>
+          <p><i className="fas fa-map-marker-alt"></i> Akure, &nbsp;Ondo State</p>
         </div>
       </div>
       <div className="footer-bottom">

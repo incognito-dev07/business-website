@@ -41,16 +41,13 @@ const ContactForm: React.FC = () => {
     const form = e.currentTarget
     const name = (form.querySelector('#name') as HTMLInputElement)?.value || ''
     const email = (form.querySelector('#email') as HTMLInputElement)?.value || ''
-    const phone = (form.querySelector('#phone') as HTMLInputElement)?.value || ''
     const serviceText = selectedServiceText === 'Select a service' ? 'Not specified' : selectedServiceText
     const message = (form.querySelector('#message') as HTMLTextAreaElement)?.value || ''
     
     let whatsappMessage = `*NEW PROJECT INQUIRY*%0A%0A
 *Name:* ${name || 'Not provided'}%0A
 *Email:* ${email || 'Not provided'}%0A
-*Phone Number*: ${phone || 'Not provided'}%0A%0A
-
-*Service Needed:* ${serviceText}%0A
+*Service Needed:* ${serviceText}%0A%0A
 *Message:* ${message || 'Not provided'}`
 
     const whatsappNumber = '2349065168872'
@@ -75,6 +72,7 @@ const ContactForm: React.FC = () => {
   return (
     <form className="contact-form" id="contactForm" onSubmit={handleSubmit}>
       <div className="form-group">
+        <h3 className="gradient">Contact Form</h3>
         <label><i className="fas fa-user"></i> PROSPECT NAME</label>
         <input type="text" id="name" required/>
       </div>
@@ -83,11 +81,7 @@ const ContactForm: React.FC = () => {
         <input type="email" id="email" required/>
       </div>
       <div className="form-group">
-        <label><i className="fas fa-phone"></i> PHONE NUMBER</label>
-        <input type="tel" id="phone"/>
-      </div>
-      <div className="form-group">
-        <label><i className="fas fa-cogs"></i> SERVICE NEEDED</label>
+        <label><i className="fas fa-wrench"></i> SERVICE NEEDED</label>
         <div className="custom-dropdown" ref={dropdownRef}>
           <div 
             className="dropdown-selected" 
@@ -114,7 +108,7 @@ const ContactForm: React.FC = () => {
       </div>
       <div className="form-group">
         <label><i className="fas fa-comment"></i> PROJECT DETAILS</label>
-        <textarea id="message" rows={5} required placeholder="Tell us about your project..."></textarea>
+        <textarea id="message" rows={4} required placeholder="Tell us about your project..."></textarea>
       </div>
       <button type="submit" className="btn btn-primary btn-submit">
         <i className="fas fa-paper-plane"></i> Send message

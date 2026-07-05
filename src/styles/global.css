@@ -281,7 +281,7 @@ main {
 
 .service-card:hover {
   transform: translateY(-4px);
-  border-color: var(--accent);
+  border-color: var(--text-muted);
   box-shadow: var(--shadow-hover);
 }
 
@@ -303,6 +303,10 @@ main {
   border: 1px solid var(--border-light);
   transition: all 0.3s ease;
   flex-shrink: 0;
+}
+
+.service-card:hover .service-icon{
+  border-color: var(--text-muted);
 }
 
 .service-icon i {
@@ -418,7 +422,6 @@ main {
 
 .project-card:hover .project-icon {
   border-color: var(--text-muted);
-  background: rgba(192, 192, 192, 0.05);
 }
 
 .project-icon i {
@@ -455,7 +458,7 @@ main {
 .project-tags span {
   background: var(--bg-elevated);
   padding: 0.25rem 0.75rem;
-  border-radius: 16px;
+  border-radius: 7.5px;
   font-size: 0.7rem;
   color: var(--accent);
   border: 1px solid var(--border-light);
@@ -479,7 +482,7 @@ main {
 
 .project-link {
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .project-link a {
@@ -488,12 +491,17 @@ main {
   font-size: 1rem;
   transition: all 0.2s ease;
   padding: 0.2rem 0.7rem;
+  border: 1px solid var(--border);
+}
+
+.project-card:hover .project-link a {
+  border-color: var(--text-muted);
 }
 
 .project-links a, .project-modal-btn {
   background: var(--bg-elevated);
   border-radius: 7.5px;
-  border: 1px solid var(--border);
+  
 }
 
 .project-links a:hover {
@@ -657,7 +665,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 0.85rem 1rem;
   cursor: pointer;
   font-weight: 600;
   font-size: 0.9rem;
@@ -745,6 +753,12 @@ main {
   padding: 1.2rem;
 }
 
+.contact-form h3 {
+  margin: 0 1rem 0.5rem 0;
+  display: flex;
+  justify-self: end;
+}
+
 .form-group {
   margin-bottom: 1rem;
 }
@@ -769,6 +783,7 @@ main {
   color: var(--text-primary);
   font-family: 'PT sans';
   font-size: 0.9rem;
+  transition: all 0.3s ease;
 }
 
 .form-group input:focus,
@@ -1078,6 +1093,10 @@ textarea {
   }
   
   .services-detailed {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .faq-list {
     grid-template-columns: repeat(3, 1fr);
   }
 }
