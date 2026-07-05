@@ -13,7 +13,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ icon, title, description, tag
   return (
     <div className="project-card">
       <div className="project-header">
-        <div className="project-icon-header">
+        <div className="project-icon">
           <i className={`fas ${icon}`}></i>
         </div>
         <h3>{title}</h3>

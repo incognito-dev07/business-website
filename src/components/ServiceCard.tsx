@@ -10,10 +10,12 @@ interface ServiceCardProps {
 const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description }) => {
   return (
     <div className="service-card">
-      <div className="service-icon">
-        <i className={`fas ${icon}`}></i>
+      <div className="service-header">
+        <div className="service-icon">
+          <i className={`fas ${icon}`}></i>
+        </div>
+        <h3>{title}</h3>
       </div>
-      <h3>{title}</h3>
       <p>{description}</p>
       <Link to="/services" className="service-link">Learn more <i className="fas fa-arrow-right"></i></Link>
     </div>
