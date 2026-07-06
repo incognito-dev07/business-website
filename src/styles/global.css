@@ -1,22 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 
 :root {
-  --bg-primary: #0a0a0f;
-  --bg-secondary: #0f0f14;
-  --bg-card: #14141c;
-  --bg-elevated: #1c1c26;
+  --bg-primary: rgba(10, 10, 15, 0.88);
+  --bg-secondary: rgba(15, 15, 20, 0.88);
+  --bg-card: rgba(20, 20, 28, 0.75);
+  --bg-elevated: rgba(28, 28, 38, 0.7);
   --text-primary: #ffffff;
   --text-secondary: #a0a0b0;
   --text-muted: #6b6b7a;
   --accent: #c0c0c0;
   --accent-glow: rgba(192, 192, 192, 0.1);
-  --border: #2a2a35;
-  --border-light: #20202a;
+  --border: rgba(42, 42, 53, 0.6);
+  --border-light: rgba(32, 32, 42, 0.5);
   --radius-sm: 8px;
   --radius-md: 12px;
   --radius-lg: 16px;
-  --shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  --shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.4);
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  --shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.6);
 }
 
 * {
@@ -30,6 +30,14 @@ body {
   background: var(--bg-primary);
   color: var(--text-primary);
   line-height: 1.6;
+}
+
+body {
+  background-image: url('/assets/canvas.svg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 /* Mobile Navigation */
