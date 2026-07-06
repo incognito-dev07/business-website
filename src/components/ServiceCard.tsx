@@ -17,7 +17,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description }) =
         <h3>{title}</h3>
       </div>
       <p>{description}</p>
-      <Link to="/services" className="service-link">Learn more <i className="fas fa-arrow-right"></i></Link>
+      <Link to="/contact" className="service-link">Get in touch <i className="fas fa-arrow-right"></i></Link>
     </div>
   )
 }

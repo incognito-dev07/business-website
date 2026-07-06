@@ -2,11 +2,11 @@ import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import ServiceCard from '../components/ServiceCard'
 
-const services = [
-  { icon: "fa-shopping-cart", title: "E-Commerce", description: "Scalable online stores with secure payments and seamless checkout experiences." },
-  { icon: "fa-mobile-alt", title: "Landing Pages", description: "High-converting landing pages designed to capture leads and drive sales." },
-  { icon: "fa-user-tie", title: "Portfolios", description: "Stunning portfolio websites that showcase your work and attract opportunities." },
-  { icon: "fa-layer-group", title: "Web Applications", description: "Complex web applications with robust backends and modern frontends." }
+const skills = [
+  { icon: "fa-python", title: "Python", description: "Backend development, automation, data processing, and API building with FastAPI, Django, and Flask." },
+  { icon: "fa-code", title: "TypeScript", description: "Type-safe, scalable applications with modern JavaScript/TypeScript across frontend and backend." },
+  { icon: "fa-globe", title: "Web Development", description: "Responsive, performant websites and web applications with React, HTML, CSS and modern frameworks." },
+  { icon: "fa-server", title: "DevOps & Tools", description: "Deployment, CI/CD, containerization, and infrastructure management with Docker, Vercel, and cloud platforms." }
 ]
 
 const Home: React.FC = () => {
@@ -46,32 +46,32 @@ const Home: React.FC = () => {
       {/* Hero Section */}
       <section className="hero">
         <h1 className="hero-title">
-          Building <span className="gradient">digital solutions </span> that make an impact
+          Building <span className="gradient">clean, efficient solutions</span> with Python & TypeScript
         </h1>
         <p className="hero-subtitle">
-          We craft high-performance websites and web apps that elevate brands, 
-          engage users, and drive tangible results.
+          I craft performant backends, type-safe applications, and modern web experiences.
+          Let's build something that works—quietly and reliably.
         </p>
         <div className="hero-buttons">
           <Link to="/contact" className="btn btn-primary">
-            <i className="fas fa-paper-plane"></i> Start a project
+            <i className="fas fa-paper-plane"></i> Get in touch
           </Link>
           <Link to="/projects" className="btn btn-outline">
-            <i className="fas fa-play"></i> View our projects
+            <i className="fas fa-play"></i> See my work
           </Link>
         </div>
       </section>
 
-      {/* Services Section */}
+      {/* Skills Section */}
       <section className="services">
         <div className="section-header">
-          <span className="section-badge"><i className="fas fa-star"></i> What we do</span>
-          <h2>Services we provide</h2>
-          <p>Tailored solutions to meet your unique business needs</p>
+          <span className="section-badge"><i className="fas fa-star"></i> What I do</span>
+          <h2>My tech stack</h2>
+          <p>Tools and technologies I work with daily</p>
         </div>
         <div className="services-grid">
-          {services.map((service, index) => (
-            <ServiceCard key={index} {...service} />
+          {skills.map((skill, index) => (
+            <ServiceCard key={index} {...skill} />
           ))}
         </div>
       </section>
@@ -79,8 +79,8 @@ const Home: React.FC = () => {
       {/* CTA Section */}
       <section className="cta">
         <div className="cta-content">
-          <h2>Ready to bring your ideas to life?</h2>
-          <p>Let's collaborate and create something extraordinary together.</p>
+          <h2>Got a project in mind?</h2>
+          <p>Let's collaborate and build something great together.</p>
           <Link to="/contact" className="btn btn-primary btn-large">
             <i className="fas fa-comment"></i> Let's talk
           </Link>

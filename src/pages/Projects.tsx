@@ -1,22 +1,13 @@
-// Projects.tsx
 import React, { useEffect } from 'react'
 import ProjectCard from '../components/ProjectCard'
-import ProcessStep from '../components/ProcessStep'
 
 const projects = [
-  { icon: "fa-shopping-cart", title: "E-Commerce Platform", description: "Full-featured online store with product management, secure payment integration, shopping cart, and order tracking system.", tags: ["React", "Node.js", "Express", "PostgreSQL"], github: "https://github.com/incognito-dev07/business-website", live: "#" },
-  { icon: "fa-user-tie", title: "Portfolio Website", description: "Modern portfolio showcasing creative work with smooth transitions, client testimonials, and blog integration.", tags: ["React", "TypeScript", "CSS"], github: "https://github.com/incognito-dev07/portfolio-website", live: "#" },
-  { icon: "fa-tasks", title: "Task Management App", description: "Collaborative tool with real-time updates, team workspaces, task assignments, progress tracking dashboards, and due dates.", tags: ["Vue.js", "Firebase", "Tailwind"], github: "https://github.com/incognito-dev07", live: "#" },
-  { icon: "fa-cloud-sun", title: "Weather Dashboard", description: "Real-time weather app with location detection, 7-day forecasts, severe weather alerts, and interactive radar maps.", tags: ["HTML", "CSS", "JavaScript", "API"], github: "https://github.com/incognito-dev07", live: "#" },
-  { icon: "fa-blog", title: "Blog Platform", description: "Full-stack blogging platform with custom CMS, user authentication, comment sections, rich text editing, and SEO optimization.", tags: ["Next.js", "Prisma", "PostgreSQL"], github: "https://github.com/incognito-dev07", live: "#" },
-  { icon: "fa-chart-line", title: "Analytics Dashboard", description: "Data visualization dashboard with interactive charts, real-time metrics, custom reports, and user behavior tracking.", tags: ["React", "Chart.js", "Express"], github: "https://github.com/incognito-dev07", live: "#" }
-]
-
-const processSteps = [
-  { number: "01", title: "Discovery", description: "Understanding your goals and requirements" },
-  { number: "02", title: "Design", description: "Creating wireframes and visual designs" },
-  { number: "03", title: "Development", description: "Building with modern technologies" },
-  { number: "04", title: "Launch", description: "Deployment and ongoing support" }
+  { icon: "fa-python", title: "Python API Framework", description: "RESTful API built with FastAPI, featuring async support, automatic OpenAPI docs, JWT auth, and PostgreSQL integration.", tags: ["Python", "FastAPI", "PostgreSQL", "Docker"], github: "https://github.com/incognito-dev07", live: "#" },
+  { icon: "fa-code", title: "TypeScript Web App", description: "Full-stack TypeScript application with React frontend, Node.js backend, type-safe API communication, and Tailwind CSS.", tags: ["TypeScript", "React", "Node.js", "Tailwind"], github: "https://github.com/incognito-dev07/portfolio-website", live: "#" },
+  { icon: "fa-robot", title: "Automation Suite", description: "Python automation scripts for data processing, web scraping, and task scheduling with cron-based execution and logging.", tags: ["Python", "Selenium", "Pandas", "Cron"], github: "https://github.com/incognito-dev07", live: "#" },
+  { icon: "fa-cloud", title: "Deployment Pipeline", description: "CI/CD pipeline with automated testing, build, and deployment to Vercel and cloud platforms using GitHub Actions.", tags: ["Docker", "GitHub Actions", "Vercel", "AWS"], github: "https://github.com/incognito-dev07", live: "#" },
+  { icon: "fa-database", title: "Data Processing Tool", description: "ETL pipeline processing large datasets with Python, using SQLAlchemy, Pandas, and Redis caching for performance.", tags: ["Python", "SQLAlchemy", "Pandas", "Redis"], github: "https://github.com/incognito-dev07", live: "#" },
+  { icon: "fa-mobile-alt", title: "Modern Web Portfolio", description: "Responsive portfolio built with React and TypeScript, featuring dark mode, smooth animations, and optimized performance.", tags: ["TypeScript", "React", "CSS", "Vite"], github: "https://github.com/incognito-dev07", live: "#" }
 ]
 
 const Projects: React.FC = () => {
@@ -36,7 +27,7 @@ const Projects: React.FC = () => {
       })
     }, observerOptions)
 
-    document.querySelectorAll('.project-card, .process-step').forEach(el => {
+    document.querySelectorAll('.project-card').forEach(el => {
       (el as HTMLElement).style.opacity = '0'
       ;(el as HTMLElement).style.transform = 'translateY(20px)'
       ;(el as HTMLElement).style.transition = 'all 0.6s ease'
@@ -49,27 +40,14 @@ const Projects: React.FC = () => {
   return (
     <>
       <section className="page-header">
-        <h1>Our <span className="gradient">projects</span></h1>
-        <p>Some of our projects we're proud to share</p>
+        <h1>My <span className="gradient">projects</span></h1>
+        <p>Things I've built with Python, TypeScript, and modern web tools</p>
       </section>
 
       <section className="project-grid-section">
         <div className="project-grid">
           {projects.map((project, index) => (
             <ProjectCard key={index} {...project} />
-          ))}
-        </div>
-      </section>
-
-      <section className="process">
-        <div className="section-header">
-          <span className="section-badge"><i className="fas fa-chart-line"></i> Our process</span>
-          <h2>How we work</h2>
-          <p>A transparent, collaborative approach to building great products</p>
-        </div>
-        <div className="process-steps">
-          {processSteps.map((step, index) => (
-            <ProcessStep key={index} {...step} />
           ))}
         </div>
       </section>

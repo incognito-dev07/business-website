@@ -12,10 +12,10 @@ const ContactForm: React.FC = () => {
   const dropdownRef = useRef<HTMLDivElement>(null)
 
   const serviceOptions = [
-    { value: 'portfolio', label: 'Portfolio Website' },
-    { value: 'ecommerce', label: 'E-Commerce Website' },
-    { value: 'landing', label: 'Landing Page' },
-    { value: 'webapp', label: 'Custom Application' },
+    { value: 'python', label: 'Python Backend / API' },
+    { value: 'typescript', label: 'TypeScript App' },
+    { value: 'web', label: 'Web Development' },
+    { value: 'automation', label: 'Automation / Scripting' },
     { value: 'other', label: 'Other' }
   ]
 
@@ -87,7 +87,7 @@ const ContactForm: React.FC = () => {
             className="dropdown-selected" 
             onClick={() => setIsDropdownOpen(!isDropdownOpen)}
           >
-            <span>{selectedServiceText}</span>
+            <span>{selectedServiceText || 'Select a service'}</span>
             <i className={`fas fa-chevron-down ${isDropdownOpen ? 'open' : ''}`}></i>
           </div>
           {isDropdownOpen && (
@@ -108,7 +108,7 @@ const ContactForm: React.FC = () => {
       </div>
       <div className="form-group">
         <label><i className="fas fa-comment"></i> PROJECT DETAILS</label>
-        <textarea id="message" rows={4} required placeholder="Tell us about your project..."></textarea>
+        <textarea id="message" rows={4} required placeholder="Tell me about your project..."></textarea>
       </div>
       <button type="submit" className="btn btn-primary btn-submit">
         <i className="fas fa-paper-plane"></i> Send message
