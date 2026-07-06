@@ -43,7 +43,7 @@ const ContactForm: React.FC = () => {
     <form className="contact-form" id="contactForm" onSubmit={handleSubmit}>
       <div className="form-group">
         <h3 className="gradient">Contact Form</h3>
-        <label><i className="fas fa-user"></i> YOUR NAME</label>
+        <label><i className="fas fa-user"></i> PROSPECT NAME</label>
         <input type="text" id="name" required/>
       </div>
       <div className="form-group">
@@ -51,12 +51,12 @@ const ContactForm: React.FC = () => {
         <input type="email" id="email" required/>
       </div>
       <div className="form-group">
-        <label><i className="fas fa-wrench"></i> WHAT DO YOU NEED?</label>
+        <label><i className="fas fa-wrench"></i> SERVICE NEEDED</label>
         <div className="custom-select-wrapper">
           <select id="service" required>
             <option value="">Select a service</option>
             <option value="python">Python Backend / API</option>
-            <option value="typescript">TypeScript App</option>
+            <option value="typescript">TypeScript Application</option>
             <option value="web">Web Development</option>
             <option value="automation">Automation / Scripting</option>
             <option value="other">Other</option>
