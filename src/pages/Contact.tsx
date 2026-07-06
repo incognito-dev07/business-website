@@ -39,16 +39,26 @@ const Contact: React.FC = () => {
         <div className="contact-grid">
           <div className="contact-info">
             <div className="contact-card">
+                
+            </div>
+            <div className="contact-card">
+                
+            </div>
+            <div className="contact-card">
               <a href="https://wa.me/2349065168872"><i className="fab fa-whatsapp"></i></a>
-              <h3>Chat with us instantly</h3>
-              <p>+234 906 516 8872</p>
+              <h3>Whatsapp</h3>
+            </div>
+            <div className="contact-card">
+                
+            </div>
+            <div className="contact-card">
+                
             </div>
             <div className="contact-card">
               <a href="https://github.com/incognito-dev07">
                 <i className="fab fa-github"></i>
               </a>
-              <h3>View our GitHub profile</h3>
-              <p>incognito-dev07</p>
+              <h3>Github</h3>
             </div>
           </div>
 
