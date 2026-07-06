@@ -251,7 +251,6 @@ main {
 
 .section-header h2 {
   font-size: 1.5rem;
-  margin-left: 0.5rem;
 }
 
 .section-header p {
@@ -383,6 +382,7 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .project-card {
@@ -564,6 +564,7 @@ main {
   font-size: 0.85rem;
 }
 
+/* Contact Section */
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -658,83 +659,47 @@ textarea {
   color: #d4af37;
 }
 
-/* Custom Dropdown */
-.custom-dropdown {
+/* Custom Select Wrapper */
+.custom-select-wrapper {
   position: relative;
   width: 100%;
-  user-select: none;
 }
 
-.dropdown-selected {
+.custom-select-wrapper select {
   width: 100%;
   padding: 0.6rem;
+  padding-right: 2.5rem;
   background: var(--bg-elevated);
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   color: var(--text-primary);
+  font-family: 'PT Sans', sans-serif;
   font-size: 0.9rem;
+  transition: all 0.3s ease;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
-.dropdown-selected i {
-  transition: transform 0.3s ease;
-  color: var(--text-secondary);
-  padding: 0.15rem;
+.custom-select-wrapper select:focus {
+  outline: none;
+  border-color: var(--accent);
 }
 
-.dropdown-selected i.open {
-  transform: rotate(180deg);
-}
-
-.dropdown-options {
-  position: absolute;
-  top: 100%;
-  left: 0; right: 0;
+.custom-select-wrapper select option {
   background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  margin-top: 4px;
-  z-index: 100;
-  max-height: 180px;
-  overflow-y: auto;
-  box-shadow: var(--shadow);
-}
-
-.dropdown-options::-webkit-scrollbar {
-  width: 3px;
-}
-
-.dropdown-options::-webkit-scrollbar-track {
-  background: var(--bg-elevated);
-  border-radius: 3px;
-}
-
-.dropdown-options::-webkit-scrollbar-thumb {
-  background: var(--accent);
-  border-radius: 3px;
-}
-
-.dropdown-options::-webkit-scrollbar-thumb:hover { background: var(--text-secondary); }
-
-.dropdown-option {
-  padding: 0.7rem;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  font-size: 0.85rem;
-  color: var(--text-secondary);
-}
-
-.dropdown-option:hover {
-  background: var(--bg-elevated);
   color: var(--text-primary);
 }
 
-.dropdown-option.selected {
-  background: var(--accent-glow);
-  color: var(--accent);
+.custom-select-wrapper i {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-secondary);
+  pointer-events: none;
+  font-size: 0.85rem;
 }
 
 /* Footer */
@@ -757,7 +722,7 @@ textarea {
 .footer-brand p {
   color: var(--text-secondary);
   font-size: 0.8rem;
-  margin: 0.5rem 0;
+  margin: 0 0 0.5rem;
 }
 
 .social-links {
@@ -894,7 +859,7 @@ textarea {
   }
   
   .footer-container {
-    grid-template-columns: 0.3fr 1fr 1fr 0.7fr;
+    grid-template-columns: 0.3fr 1fr 0.5fr 0.7fr;
     gap: 2rem;
   }
   
@@ -912,7 +877,7 @@ textarea {
   /* CONTACT PAGE: Form (left) + FAQ (right) - 1.5:1 ratio */
   .contact-page-wrapper {
     grid-template-columns: 1.3fr 1fr;
-    gap: 2.5rem;
+    gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
     align-items: start;
@@ -964,7 +929,7 @@ textarea {
   }
   
   .footer-container {
-    grid-template-columns: 0.3fr 1fr 1fr 0.7fr;
+    grid-template-columns: 0.3fr 1fr 0.5fr 0.7fr;
     gap: 2rem;
   }
   
@@ -998,6 +963,7 @@ textarea {
 @media (max-width: 719px) {
   .faq-heading {
     display: block;
+    margin-left: 0.5rem;
   }
 }
 
@@ -1005,53 +971,4 @@ textarea {
   .contact-grid {
     grid-template-columns: 1fr;
   }
-}
-
-
-/* Custom Select Wrapper */
-.custom-select-wrapper {
-  position: relative;
-  width: 100%;
-}
-
-.custom-select-wrapper select {
-  width: 100%;
-  padding: 0.6rem;
-  padding-right: 2.5rem;
-  background: var(--bg-elevated);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  color: var(--text-primary);
-  font-family: 'PT Sans', sans-serif;
-  font-size: 0.9rem;
-  transition: all 0.3s ease;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  cursor: pointer;
-}
-
-.custom-select-wrapper select:focus {
-  outline: none;
-  border-color: var(--accent);
-}
-
-.custom-select-wrapper select option {
-  background: var(--bg-card);
-  color: var(--text-primary);
-}
-
-.custom-select-wrapper i {
-  position: absolute;
-  right: 1rem;
-  top: 50%;
-  transform: translateY(-50%);
-  color: var(--text-secondary);
-  pointer-events: none;
-  font-size: 0.85rem;
-  transition: transform 0.3s ease;
-}
-
-.custom-select-wrapper select:focus + i {
-  transform: translateY(-50%) rotate(180deg);
 }
