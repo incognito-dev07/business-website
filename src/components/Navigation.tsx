@@ -53,9 +53,6 @@ const Navigation: React.FC = () => {
           <Link to="/projects" className={currentPage === 'projects' ? 'active' : ''} onClick={() => setMobileMenuOpen(false)}>
             <i className="fas fa-briefcase"></i> Projects
           </Link>
-          <Link to="/services" className={currentPage === 'services' ? 'active' : ''} onClick={() => setMobileMenuOpen(false)}>
-            <i className="fas fa-cogs"></i> Services
-          </Link>
           <Link to="/contact" className={currentPage === 'contact' ? 'active' : ''} onClick={() => setMobileMenuOpen(false)}>
             <i className="fas fa-envelope"></i> Contact
           </Link>
@@ -72,7 +69,6 @@ const Navigation: React.FC = () => {
           <div className="nav-links">
             <Link to="/" className={currentPage === 'home' ? 'active' : ''}>Home</Link>
             <Link to="/projects" className={currentPage === 'projects' ? 'active' : ''}>Projects</Link>
-            <Link to="/services" className={currentPage === 'services' ? 'active' : ''}>Services</Link>
             <Link to="/contact" className={currentPage === 'contact' ? 'active' : ''}>Contact</Link>
           </div>
         </div>
