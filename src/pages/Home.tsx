@@ -64,10 +64,9 @@ const Home: React.FC = () => {
 
       {/* Skills Section */}
       <section className="services">
-        <div className="section-header">
-          <span className="section-badge"><i className="fas fa-star"></i> What I do</span>
-          <h2>My tech stack</h2>
-          <p>Tools and technologies I work with daily</p>
+        <div className="section-header" style={{ textAlign: 'left' }}>
+          <span className="section-badge"><i className="fas fa-star"></i> Stack</span>
+          <h2>Core technologies</h2>
         </div>
         <div className="services-grid">
           {skills.map((skill, index) => (

@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 
 :root {
-  --bg-primary: rgba(7, 7, 10, 0.88);
-  --bg-secondary: rgba(10, 10, 13, 0.88);
+  --bg-primary: rgba(7, 7, 10);
+  --bg-secondary: rgba(10, 10, 13);
   --bg-card: rgba(13, 13, 18, 0.75);
-  --bg-elevated: rgba(16, 16, 21, 0.7);
+  --bg-elevated: rgba(16, 16, 21, 0.75);
   --text-primary: #ffffff;
   --text-secondary: #a0a0b0;
   --text-muted: #6b6b7a;
@@ -29,7 +29,7 @@ body {
   font-family: 'PT Sans', 'Sans-Serif';
   color: var(--text-primary);
   line-height: 1.6;
-  background-image: url('/assets/canvas.png');
+  background-image: url('/assets/canvas.svg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -42,8 +42,8 @@ body {
   top: 0; left: 0;
   right: 0;
   z-index: 1000;
-  background: rgba(10, 10, 15, 0.95);
-  backdrop-filter: blur(10px);
+  background: rgba(7, 7, 10, 0.95);
+  backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
 }
 
@@ -112,7 +112,7 @@ body {
 .mobile-menu a.active,
 .mobile-menu a:hover {
   color: var(--text-primary);
-  background: var(--bg-elevated);
+  background: rgba(16, 16, 21, 0.8);
 }
 
 /* Desktop Navigation */
@@ -123,8 +123,8 @@ body {
   left: 0;
   right: 0;
   z-index: 1000;
-  background: rgba(10, 10, 15, 0.95);
-  backdrop-filter: blur(10px);
+  background: rgba(7, 7, 10, 0.95);
+  backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
   padding: 0 2rem;
 }
@@ -254,6 +254,7 @@ main {
 
 .section-header h2 {
   font-size: 1.5rem;
+  margin-left: 0.5rem;
 }
 
 .section-header p {
@@ -966,7 +967,6 @@ textarea {
 @media (max-width: 719px) {
   .faq-heading {
     display: block;
-    margin-left: 0.5rem;
   }
 }
 
