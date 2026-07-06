@@ -13,7 +13,7 @@ const ContactForm: React.FC = () => {
 
   const serviceOptions = [
     { value: 'python', label: 'Python Backend / API' },
-    { value: 'typescript', label: 'TypeScript App' },
+    { value: 'typescript', label: 'TypeScript Application' },
     { value: 'web', label: 'Web Development' },
     { value: 'automation', label: 'Automation / Scripting' },
     { value: 'other', label: 'Other' }

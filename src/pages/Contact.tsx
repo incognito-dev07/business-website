@@ -5,8 +5,8 @@ import FAQItem from '../components/FaqItem'
 const faqs = [
   { question: "Do you offer maintenance and support?", answer: "Yes! I offer ongoing maintenance, updates, and support packages to keep your projects running smoothly after launch." },
   { question: "Can you work with my existing codebase?", answer: "Absolutely. I'm comfortable jumping into existing Python and TypeScript projects, refactoring code, and adding new features." },
-  { question: "What's your preferred tech stack?", answer: "I work primarily with Python (FastAPI, Django, Flask), TypeScript (React, Node.js), and modern deployment tools like Docker and Vercel." },
-  { question: "Do you do consulting or code review?", answer: "Yes—I offer code review, architecture consulting, and technical mentoring for teams and individuals." }
+  { question: "What's your preferred tech stack?", answer: "I work primarily with TypeScript (React, Node.js), Python (FastAPI), and modern deployment tools like Docker and Vercel." },
+  { question: "Do you do consulting or code review?", answer: "Yes. I offer code review, architecture consulting, and technical mentoring for teams and individuals." }
 ]
 
 const Contact: React.FC = () => {
