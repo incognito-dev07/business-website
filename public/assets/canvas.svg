@@ -34,14 +34,11 @@
     </style>
   </defs>
 
-  <!-- Dark background matching rgba(7, 7, 10) -->
   <rect width="100%" height="100%" fill="#07070a"/>
   <rect width="100%" height="100%" fill="url(#mesh)" opacity="0.5"/>
   <rect width="100%" height="100%" fill="url(#grid)" opacity="0.4"/>
   <rect width="100%" height="100%" filter="url(#noise)" opacity="0.2"/>
 
-  <!-- ==================== TWINKLING STARS ==================== -->
-  <!-- Row 1 -->
   <circle class="star1" cx="45" cy="35" r="1.2" fill="#c0c0c0" opacity="0.5"/>
   <circle class="star2" cx="120" cy="55" r="0.8" fill="#c0c0c0" opacity="0.3"/>
   <circle class="star3" cx="210" cy="25" r="1.0" fill="#c0c0c0" opacity="0.4"/>
@@ -53,7 +50,6 @@
   <circle class="star4" cx="820" cy="30" r="1.2" fill="#c0c0c0" opacity="0.5"/>
   <circle class="star5" cx="920" cy="45" r="0.9" fill="#c0c0c0" opacity="0.3"/>
 
-  <!-- Row 2 -->
   <circle class="star1" cx="60" cy="130" r="0.9" fill="#c0c0c0" opacity="0.4"/>
   <circle class="star2" cx="150" cy="150" r="1.1" fill="#c0c0c0" opacity="0.5"/>
   <circle class="star3" cx="260" cy="120" r="0.7" fill="#c0c0c0" opacity="0.3"/>
@@ -64,7 +60,6 @@
   <circle class="star3" cx="810" cy="160" r="1.0" fill="#c0c0c0" opacity="0.4"/>
   <circle class="star4" cx="930" cy="140" r="0.7" fill="#c0c0c0" opacity="0.3"/>
 
-  <!-- Row 3 -->
   <circle class="star1" cx="30" cy="250" r="1.0" fill="#c0c0c0" opacity="0.5"/>
   <circle class="star2" cx="140" cy="230" r="0.8" fill="#c0c0c0" opacity="0.3"/>
   <circle class="star3" cx="250" cy="260" r="1.1" fill="#c0c0c0" opacity="0.4"/>
@@ -76,7 +71,6 @@
   <circle class="star4" cx="910" cy="260" r="1.0" fill="#c0c0c0" opacity="0.5"/>
   <circle class="star5" cx="970" cy="240" r="0.7" fill="#c0c0c0" opacity="0.3"/>
 
-  <!-- Row 4 -->
   <circle class="star1" cx="50" cy="370" r="0.8" fill="#c0c0c0" opacity="0.3"/>
   <circle class="star2" cx="160" cy="350" r="1.1" fill="#c0c0c0" opacity="0.5"/>
   <circle class="star3" cx="270" cy="380" r="0.9" fill="#c0c0c0" opacity="0.4"/>
@@ -87,7 +81,6 @@
   <circle class="star3" cx="820" cy="380" r="1.0" fill="#c0c0c0" opacity="0.4"/>
   <circle class="star4" cx="940" cy="360" r="0.9" fill="#c0c0c0" opacity="0.3"/>
 
-  <!-- Row 5 -->
   <circle class="star1" cx="40" cy="490" r="1.0" fill="#c0c0c0" opacity="0.4"/>
   <circle class="star2" cx="150" cy="470" r="0.8" fill="#c0c0c0" opacity="0.3"/>
   <circle class="star3" cx="260" cy="500" r="1.2" fill="#c0c0c0" opacity="0.5"/>
@@ -98,7 +91,6 @@
   <circle class="star3" cx="810" cy="490" r="0.8" fill="#c0c0c0" opacity="0.3"/>
   <circle class="star4" cx="920" cy="510" r="1.0" fill="#c0c0c0" opacity="0.4"/>
 
-  <!-- Row 6 -->
   <circle class="star1" cx="60" cy="610" r="0.9" fill="#c0c0c0" opacity="0.3"/>
   <circle class="star2" cx="170" cy="590" r="1.0" fill="#c0c0c0" opacity="0.4"/>
   <circle class="star3" cx="280" cy="620" r="0.8" fill="#c0c0c0" opacity="0.3"/>
@@ -109,7 +101,6 @@
   <circle class="star3" cx="830" cy="620" r="1.2" fill="#c0c0c0" opacity="0.5"/>
   <circle class="star4" cx="940" cy="600" r="0.8" fill="#c0c0c0" opacity="0.3"/>
 
-  <!-- Row 7 -->
   <circle class="star1" cx="30" cy="730" r="1.1" fill="#c0c0c0" opacity="0.5"/>
   <circle class="star2" cx="140" cy="710" r="0.8" fill="#c0c0c0" opacity="0.3"/>
   <circle class="star3" cx="250" cy="740" r="1.0" fill="#c0c0c0" opacity="0.4"/>
@@ -120,7 +111,6 @@
   <circle class="star3" cx="800" cy="730" r="0.8" fill="#c0c0c0" opacity="0.3"/>
   <circle class="star4" cx="910" cy="750" r="1.1" fill="#c0c0c0" opacity="0.5"/>
 
-  <!-- Row 8 (bottom) -->
   <circle class="star1" cx="80" cy="780" r="0.8" fill="#c0c0c0" opacity="0.3"/>
   <circle class="star2" cx="200" cy="790" r="1.0" fill="#c0c0c0" opacity="0.4"/>
   <circle class="star3" cx="330" cy="780" r="0.7" fill="#c0c0c0" opacity="0.3"/>
@@ -130,7 +120,6 @@
   <circle class="star2" cx="850" cy="780" r="0.8" fill="#c0c0c0" opacity="0.3"/>
   <circle class="star3" cx="970" cy="790" r="1.2" fill="#c0c0c0" opacity="0.5"/>
 
-  <!-- ==================== EXTRA SCATTERED STARS ==================== -->
   <circle class="star5" cx="90" cy="90" r="0.6" fill="#c0c0c0" opacity="0.2"/>
   <circle class="star1" cx="330" cy="100" r="0.7" fill="#c0c0c0" opacity="0.3"/>
   <circle class="star2" cx="550" cy="80" r="0.5" fill="#c0c0c0" opacity="0.2"/>

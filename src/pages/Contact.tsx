@@ -44,14 +44,12 @@ const Contact: React.FC = () => {
       </section>
 
       <div className="contact-page-wrapper">
-        {/* Left / Top: Contact Form */}
         <div className="contact-section">
           <div className="contact-grid" style={{ gridTemplateColumns: '1fr' }}>
             <ContactForm />
           </div>
         </div>
 
-        {/* Right / Bottom: FAQ */}
         <section className="faq">
           <div className="section-header" style={{ textAlign: 'left' }}>
             <span className="section-badge"><i className="fas fa-question-circle"></i> FAQ</span>

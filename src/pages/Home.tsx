@@ -38,12 +38,10 @@ const Home: React.FC = () => {
 
   return (
     <>
-      {/* Hero SVG Illustration */}
       <div className="hero-svg-wrapper">
         <img src="/assets/banner.svg" alt="IncogDev Illustration" className="hero-svg" />
       </div>
 
-      {/* Hero Section */}
       <section className="hero">
         <h1 className="hero-title">
           Building <span className="gradient">clean, efficient solutions</span> with Python & TypeScript
@@ -62,7 +60,6 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Skills Section */}
       <section className="services">
         <div className="section-header" style={{ textAlign: 'left' }}>
           <span className="section-badge"><i className="fas fa-star"></i> Stack</span>
@@ -75,7 +72,6 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
       <section className="cta">
         <div className="cta-content">
           <h2>Got a project in mind?</h2>

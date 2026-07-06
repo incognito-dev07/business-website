@@ -35,7 +35,6 @@ const Navigation: React.FC = () => {
 
   return (
     <>
-      {/* Mobile Navigation */}
       <nav className="mobile-nav" id="mobileNav">
         <div className="mobile-nav-header">
           <div className="logo">
@@ -59,7 +58,6 @@ const Navigation: React.FC = () => {
         </div>
       </nav>
 
-      {/* Desktop Navigation */}
       <nav className="desktop-nav">
         <div className="nav-container">
           <div className="logo">

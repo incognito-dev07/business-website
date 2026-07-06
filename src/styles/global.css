@@ -36,7 +36,6 @@ body {
   background-repeat: no-repeat;
 }
 
-/* Mobile Navigation */
 .mobile-nav {
   position: fixed;
   top: 0; left: 0;
@@ -115,7 +114,6 @@ body {
   background: rgba(16, 16, 21, 0.8);
 }
 
-/* Desktop Navigation */
 .desktop-nav {
   display: none;
   position: fixed;
@@ -156,13 +154,11 @@ body {
   color: var(--text-primary);
 }
 
-/* Main Content */
 main {
   margin-top: 65px;
   padding: 1rem;
 }
 
-/* Hero Section */
 .hero {
   text-align: center;
   padding: 1rem 0;
@@ -234,7 +230,6 @@ main {
   background: var(--bg-elevated);
 }
 
-/* Section Header */
 .section-header {
   text-align: center;
   margin-bottom: 1rem;
@@ -262,7 +257,6 @@ main {
   font-size: 0.9rem;
 }
 
-/* Services Grid (reused as Skills Grid) */
 .services {
   padding: 1rem 0;
 }
@@ -348,7 +342,6 @@ main {
   transform: translateX(4px);
 }
 
-/* CTA Section */
 .cta {
   background: var(--bg-card);
   border-radius: var(--radius-lg);
@@ -367,7 +360,6 @@ main {
   margin-bottom: 1.5rem;
 }
 
-/* Page Header */
 .page-header {
   text-align: center;
   margin-bottom: 1rem;
@@ -381,7 +373,6 @@ main {
   color: var(--text-secondary);
 }
 
-/* Project Grid */
 .project-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -514,7 +505,6 @@ main {
   gap: 8px;
 }
 
-/* FAQ */
 .faq {
   padding: 2rem 0;
 }
@@ -568,7 +558,6 @@ main {
   font-size: 0.85rem;
 }
 
-/* Contact Section */
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -663,7 +652,6 @@ textarea {
   color: #d4af37;
 }
 
-/* Custom Select Wrapper */
 .custom-select-wrapper {
   position: relative;
   width: 100%;
@@ -706,7 +694,6 @@ textarea {
   font-size: 0.85rem;
 }
 
-/* Footer */
 .footer {
   background: var(--bg-secondary);
   border-top: 1px solid var(--border);
@@ -777,7 +764,6 @@ textarea {
   color: var(--text-muted);
 }
 
-/* Hero SVG Styles */
 .hero-svg-wrapper {
   text-align: center;
 }
@@ -789,9 +775,7 @@ textarea {
   max-width: 800px;
 }
 
-/* ============================================
-   CONTACT PAGE - RESPONSIVE LAYOUT
-   ============================================ */
+
 .contact-page-wrapper {
   display: grid;
   grid-template-columns: 1fr;
@@ -799,49 +783,27 @@ textarea {
   align-items: start;
 }
 
-/* Mobile: Form then FAQ (stacked) */
-/* FAQ grid is 1fr by default (from base styles) */
-
-/* Hide FAQ heading when side by side (desktop) */
 @media (min-width: 920px) {
-  .faq-heading {
-    display: none;
-  }
+  .faq-heading { display: none; }
 }
 
-/* Tablet (720px to 919px): FAQ becomes 2 columns when stacked */
 @media (min-width: 720px) and (max-width: 919px) {
   .faq-list {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Desktop (920px and up): Side by side - Form left, FAQ right */
 @media (min-width: 920px) {
   main {
     margin-top: 85px;
     padding: 2rem;
   }
   
-  .hero {
-    padding: 2rem 0;
-  }
-  
-  .hero-title {
-    font-size: 2.5rem;
-  }
-  
-  .hero-subtitle {
-    font-size: 1.1rem;
-  }
-  
-  .mobile-nav {
-    display: none;
-  }
-  
-  .desktop-nav {
-    display: block;
-  }
+  .hero { padding: 2rem 0; }
+  .hero-title { font-size: 2.5rem; }
+  .hero-subtitle { font-size: 1.1rem; }
+  .mobile-nav { display: none; }
+  .desktop-nav { display: block; }
   
   .services-grid {
     grid-template-columns: repeat(4, 1fr);
@@ -858,9 +820,7 @@ textarea {
     margin: 0 auto;
   }
 
-  .hero-svg {
-    max-width: 700px;
-  }
+  .hero-svg { max-width: 700px; }
   
   .footer-container {
     grid-template-columns: 0.3fr 1fr 0.5fr 0.7fr;
@@ -878,7 +838,6 @@ textarea {
     margin-right: 1rem;
   }
 
-  /* CONTACT PAGE: Form (left) + FAQ (right) - 1.5:1 ratio */
   .contact-page-wrapper {
     grid-template-columns: 1.3fr 1fr;
     gap: 2rem;
@@ -895,32 +854,15 @@ textarea {
     grid-template-columns: 1fr;
   }
 
-  .contact-grid {
-    max-width: 100%;
-  }
+  .contact-grid { max-width: 100%; }
 }
 
-/* Keep existing tablet styles for other elements (768-919px) */
 @media (min-width: 768px) and (max-width: 919px) {
-  main {
-    padding: 1.5rem;
-  }
-  
-  .hero-title {
-    font-size: 2.5rem;
-  }
-  
-  .hero-subtitle {
-    font-size: 1.1rem;
-  }
-  
-  .mobile-nav {
-    display: none;
-  }
-  
-  .desktop-nav {
-    display: block;
-  }
+  main { padding: 1.5rem; }
+  .hero-title { font-size: 2.5rem; }
+  .hero-subtitle { font-size: 1.1rem; }
+  .mobile-nav { display: none; }
+  .desktop-nav { display: block; }
   
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -959,15 +901,11 @@ textarea {
     position: relative;
   }
   
-  .hero-svg {
-    max-width: 600px;
-  }
+  .hero-svg { max-width: 600px; }
 }
 
 @media (max-width: 719px) {
-  .faq-heading {
-    display: block;
-  }
+  .faq-heading { display: block; }
 }
 
 @media (min-width: 480px) {
