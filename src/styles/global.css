@@ -1006,3 +1006,52 @@ textarea {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* Custom Select Wrapper */
+.custom-select-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.custom-select-wrapper select {
+  width: 100%;
+  padding: 0.6rem;
+  padding-right: 2.5rem;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  font-family: 'PT Sans', sans-serif;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
+.custom-select-wrapper select:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.custom-select-wrapper select option {
+  background: var(--bg-card);
+  color: var(--text-primary);
+}
+
+.custom-select-wrapper i {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-secondary);
+  pointer-events: none;
+  font-size: 0.85rem;
+  transition: transform 0.3s ease;
+}
+
+.custom-select-wrapper select:focus + i {
+  transform: translateY(-50%) rotate(180deg);
+}
