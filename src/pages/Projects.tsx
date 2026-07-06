@@ -40,7 +40,7 @@ const Projects: React.FC = () => {
   return (
     <>
       <section className="page-header">
-        <h1>My <span className="gradient">projects</span></h1>
+        <h1>Projects <span className="gradient">gallery</span></h1>
         <p>Things I've built with Python, TypeScript, and modern web tools</p>
       </section>
 
