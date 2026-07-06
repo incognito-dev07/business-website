@@ -39,26 +39,30 @@ const Contact: React.FC = () => {
         <div className="contact-grid">
           <div className="contact-info">
             <div className="contact-card">
-                
+              <a href="mailto:osasanolusola2007@gmail.com"><i className="fas fa-envelope"></i></a>
+              <h3>E-mail</h3>
             </div>
             <div className="contact-card">
-                
+              <a href="https://t.me/incogdev"><i className="fab fa-telegram"></i></a>
+              <h3>Telegram</h3>  
             </div>
             <div className="contact-card">
               <a href="https://wa.me/2349065168872"><i className="fab fa-whatsapp"></i></a>
-              <h3>Whatsapp</h3>
+              <h3>WhatsApp</h3>
             </div>
             <div className="contact-card">
-                
+              <a href="https://discord.gg/mrWvZA4b"><i className="fab fa-discord"></i></a>
+              <h3>Discord</h3>  
             </div>
             <div className="contact-card">
-                
+              <a href="https://wa.me/2349065168872"><i className="fab fa-youtube"></i></a>
+              <h3>YouTube</h3>  
             </div>
             <div className="contact-card">
               <a href="https://github.com/incognito-dev07">
                 <i className="fab fa-github"></i>
               </a>
-              <h3>Github</h3>
+              <h3>GitHub</h3>
             </div>
           </div>
 

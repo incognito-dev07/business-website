@@ -10,11 +10,11 @@ const Footer: React.FC = () => {
           <p>Crafting exceptional digital experiences that drive results.</p>
           <div className="social-links">
             <a href="https://github.com/incognito-dev07" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
-            <a href="#" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin-in"></i></a>
+            <a href="mailto:osasanolusola2007@gmail.com" target="_blank" rel="noopener noreferrer"><i className="fas fa-envelope"></i></a>
             <a href="https://wa.me/2349065168872" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-whatsapp"></i>
             </a>
-            <a href="https://www.facebook.com/profile.php?id=100087235899580" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook"></i></a>
+            <a href="https://discord.gg/mrWvZA4b" target="_blank" rel="noopener noreferrer"><i className="fab fa-discord"></i></a>
           </div>
         </div>
         <div className="footer-links">
