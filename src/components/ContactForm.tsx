@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 const ContactForm: React.FC = () => {
   const [status] = useState<{ type: string; message: string }>({
     type: 'info',
-    message: 'After submitting, you\'ll be redirected to WhatsApp to confirm your booking with us.'
+    message: 'You will be redirected to WhatsApp to confirm your inquiry with me after submitting'
   })
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
