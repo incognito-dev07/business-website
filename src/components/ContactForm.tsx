@@ -25,18 +25,8 @@ const ContactForm: React.FC = () => {
     const whatsappNumber = '2349065168872'
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`
     
-    const submitBtn = form.querySelector('.btn-submit') as HTMLButtonElement
-    const originalText = submitBtn.innerHTML
-    submitBtn.innerHTML = '<i class="fab fa-whatsapp fa-spin"></i> Redirecting...'
-    submitBtn.disabled = true
-    
-    setTimeout(() => {
-      window.open(whatsappUrl, '_blank')
-      form.reset()
-      
-      submitBtn.innerHTML = originalText
-      submitBtn.disabled = false
-    }, 1000)
+    window.open(whatsappUrl, '_blank')
+    form.reset()
   }
 
   return (
@@ -72,7 +62,7 @@ const ContactForm: React.FC = () => {
         <i className="fas fa-paper-plane"></i> Send message
       </button>
       <div id="formStatus" className={`form-status ${status.type}`}>
-        <i className={`fas ${status.type === 'info' ? 'fa-info-circle' : status.type === 'success' ? 'fa-check-circle' : 'fa-exclamation-circle'}`}></i> {status.message}
+        <i className="fas fa-info-circle"></i> {status.message}
       </div>
     </form>
   )
