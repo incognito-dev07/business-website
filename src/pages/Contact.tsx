@@ -40,7 +40,7 @@ const Contact: React.FC = () => {
     <>
       <section className="page-header">
         <h1>Get in <span className="gradient">touch</span></h1>
-        <p>Let's discuss your project—whether it's Python, TypeScript, or something in between</p>
+        <p>Open to opportunities, collaborations, and new challenges</p>
       </section>
 
       <div className="contact-page-wrapper">

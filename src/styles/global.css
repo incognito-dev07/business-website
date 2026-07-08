@@ -213,20 +213,15 @@ main {
   color: var(--bg-primary);
 }
 
-.btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-hover);
-}
-
 .btn-outline {
-  background: transparent;
-  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  border: 1px solid var(--text-muted);
   color: var(--text-primary);
 }
 
-.btn-outline:hover {
-  border-color: var(--accent);
-  background: var(--bg-elevated);
+.btn-primary:hover, .btn-outline:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
 }
 
 .section-header {

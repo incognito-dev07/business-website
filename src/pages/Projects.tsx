@@ -41,7 +41,7 @@ const Projects: React.FC = () => {
     <>
       <section className="page-header">
         <h1>Projects <span className="gradient">gallery</span></h1>
-        <p>Things I've built with Python, TypeScript, and modern web tools</p>
+        <p>Each project reflects a commitment to clean code, performance, and thoughtful design.</p>
       </section>
 
       <section className="project-grid-section">
