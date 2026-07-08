@@ -47,7 +47,7 @@ const Navigation: React.FC = () => {
         </div>
         <div className={`mobile-menu ${mobileMenuOpen ? 'active' : ''}`} id="mobileMenu" ref={mobileMenuRef}>
           <Link to="/" className={currentPage === 'home' ? 'active' : ''} onClick={() => setMobileMenuOpen(false)}>
-            <i className="fas fa-home"></i> Overview
+            <i className="fas fa-home"></i> Home
           </Link>
           <Link to="/projects" className={currentPage === 'projects' ? 'active' : ''} onClick={() => setMobileMenuOpen(false)}>
             <i className="fas fa-briefcase"></i> Projects
